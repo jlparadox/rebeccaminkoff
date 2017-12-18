@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rebecca Minkoff App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#4e8ef7">
+    <!-- cordova.js required for cordova apps -->
+    <!-- <script src="cordova.js"></script> -->
+
+    <!-- un-comment this code to enable service worker
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(() => console.log('service worker installed'))
+        .catch(err => console.error('Error', err));
+    }
+  </script>-->
+
+    <link href="build/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Ionic's root component and where the app will load -->
+    <ion-app></ion-app>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+        ga('create', 'UA-108016378-1', 'auto');  
+    </script>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <!-- Google Tag Manager -->
+    <script>
+        dataLayer = [];
+    </script>
+
+    <script>
+        (function(w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    'gtm.start': new Date().getTime(),
+                    event: 'gtm.js'
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-5D3HLZ5');
+    </script>
+    <!-- End Google Tag Manager -->
+
+
+    <!-- Youtube Player -->
+    <!-- <script>
+        // Load the IFrame Player API code asynchronously.
+        var tag = document.createElement('script');
+        tag.src = "//www.youtube.com/player_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        // Replace the 'ytplayer' element with an <iframe> and
+        // YouTube player after the API code downloads.
+        var player;
+
+        function onYouTubePlayerAPIReady() {
+            player = new YT.Player('ytplayer', {
+                height: '360',
+                width: '640',
+                modestbranding: 1,
+                videoId: 'M7lc1UVf-VE'
+            });
+        }
+    </script> -->
+
+    <!-- Youtube Player -->
+
+    <!-- The polyfills js is generated during the build process -->
+    <script src="build/polyfills.js"></script>
+
+    <!-- The evrythng js SDK to communicate with EVRYTHNG REST API -->
+    <script src="assets/scripts/evrythng/evrythng.min.js"></script>
+    <!-- <script src="//d10ka0m22z5ju5.cloudfront.net/toolkit/evrythng-js-sdk/evrythng-4.7.1.min.js"></script> -->
+    <!-- The evrythng-extended js extended version of evrythng.js that adds Operator administrative capabilities-->
+    <!-- <script src="assets/scripts/evrythng-extended/evrythng-extended.min.js"></script> -->
+    <!-- <script src="//d10ka0m22z5ju5.cloudfront.net/toolkit/evrythng-js-sdk/evrythng-extended-4.7.1.min.js"></script> -->
+    <!-- The evrythng-scan js SDK of  SCANTHNG product -->
+    <!-- <script src="//d10ka0m22z5ju5.cloudfront.net/toolkit/evrythng-js-sdk/evrythng-scan-2.0.0.min.js"></script> -->
+
+    <script src="assets/scripts/evrythng/evrythng-scan.min.js"></script>
+
+    <!-- The vendor js is generated during the build process
+
+       It contains all of the dependencies in node_modules -->
+    <script src="build/vendor.js"></script>
+
+    <!-- The main bundle js is generated during the build process -->
+    <script src="build/main.js"></script>
+
+</body>
+
+</html>

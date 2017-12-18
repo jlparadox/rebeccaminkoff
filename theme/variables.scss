@@ -1,0 +1,170 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/v2/theming/
+$font-path: "../assets/fonts";
+@import "ionic.globals"; // Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files.
+// To view all the possible Ionic variables, see:
+// http://ionicframework.com/docs/v2/theming/overriding-ionic-variables/
+// Named Color Variables
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+$colors: ( primary: #387ef5, secondary: #32db64, danger: #f53d3d, light: #f4f4f4, dark: #222, grey: #656565, violet: #101970 );
+$alert-min-width: 80%;
+.custom-modal {
+  $sec_color:#737373;
+
+    font-family: "futura" !important;
+
+  .alert-wrapper{
+    border-radius: 0px !important;
+    background: #ffffff!important;
+  }
+
+  .alert-input-wrapper{
+    position:relative;
+    margin-top: 2rem;
+  }
+
+  .alert-title {
+      font-family: "futura" !important;
+      font-size: 1.5rem !important;
+      font-weight: normal !important;
+  }
+  .alert-message{
+    color:$sec_color  !important;
+    font-size: 1.2rem !important;
+  }
+
+  .alert-input-wrapper::before{
+    content: "email address";
+    text-transform: uppercase;
+    color: $sec_color;
+    font-size: 1rem;
+    top: -6px;
+    position: absolute;
+  }
+}
+.custom-alert {
+  ion-backdrop {
+    opacity: 0.6 !important;
+  }
+
+  .alert-wrapper {
+    border-radius: 0 !important;
+  }
+
+  p {
+    font-family: "Futura";
+    margin: 3rem;
+    font-size: 1.4rem;
+    text-align: center!important;
+    color: #000!important;
+  }
+
+  h2.alert-title {
+    font-size: 3rem;
+    font-family: "Futura";
+    font-weight: normal;
+    padding-top: 35px;
+    text-align: center!important;
+  }
+
+  .highlighted {
+    background: #000000 !important;
+    color: #ffffff !important;
+  }
+
+  .white{
+    color: #000!important;
+  }
+
+  .alert-button {
+    overflow: hidden;
+    text-align: center!important;
+    -webkit-flex: 0;
+    -ms-flex: 0;
+    flex: inherit!important;
+    margin: 9px auto !important;
+    min-width: 90%!important;
+    height: 44px;
+    border-radius: 0;
+    font-size: 1.5rem!important;
+    border: 1px solid #000;
+    font-family: "Futura"!important;
+    text-transform: uppercase;
+    background: none;
+    padding: 18px!important;
+    border-color: #000!important;
+    
+  }
+  .alert-title {
+
+    font-weight: "normal"!important;
+  }
+
+  .alert-button:last-child {
+    border-right: 1px solid #000!important;
+    font-weight: normal!important;
+  }
+
+  .alert-button-group {
+    background: #fff!important;
+    text-align: center;
+    padding: 8px !important;
+    display: block;
+  }
+  .alert-button .button-inner {
+    -webkit-justify-content: center!important;
+    -ms-flex-pack: center!important;
+    text-align: center!important;
+    justify-content: center!important;
+  }
+   .alert-head {
+    text-align: center!important;
+    padding: 12px 16px 7px!important;
+  }
+  .alert-message, .alert-input-group {
+    padding: 0 16px 21px !important;
+
+  }
+}
+.location-permission-alert {
+  .dark-button{
+    color: #000000!important;
+  }
+  .alert-title{
+    font-size: 14px !important;
+  }
+}
+// App EVT Variables
+// --------------------------------------------------
+// EVT only Sass variables can go here
+// App iOS Variables
+// --------------------------------------------------
+// iOS only Sass variables can go here
+// App Material Design Variables
+// --------------------------------------------------
+// Material Design only Sass variables can go here
+// App Windows Variables
+// --------------------------------------------------
+// Windows only Sass variables can go here
+// App Theme
+// --------------------------------------------------
+// Ionic apps can have different themes applied, which can
+// then be future customized. This import comes last
+// so that the above variables are used and Ionic's
+// default are overridden.
+@import "ionic.theme.default"; // Ionicons
+// --------------------------------------------------
+// The premium icon font for Ionic. For more info, please see:
+// http://ionicframework.com/docs/v2/ionicons/
+@import "ionic.ionicons"; // Fonts
+// --------------------------------------------------
+@import "roboto";
+@import "noto-sans";
